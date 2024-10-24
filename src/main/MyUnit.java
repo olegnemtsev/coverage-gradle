@@ -6,6 +6,7 @@ public class MyUnit {
     }
 
     public void print(){
+        int a = 5;
         System.out.println("onetwothree");
     }
 }
