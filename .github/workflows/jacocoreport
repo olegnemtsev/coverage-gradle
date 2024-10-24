@@ -1,2 +1,8 @@
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
 name: JaCoCo Report
   uses: Madrapps/jacoco-report@v1.7.1
