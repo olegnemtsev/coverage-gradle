@@ -52,4 +52,11 @@ public class ClassWithNoCoverage {
         System.out.println(num1 + " " + op + " " + num2
                 + " = " + o);
     }
+
+    public void helpMethodWithCoverage(){
+        int a = 0;
+        a++;
+        a++;
+        System.out.println(a);
+    }
 }
