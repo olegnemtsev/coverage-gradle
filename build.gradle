@@ -24,6 +24,11 @@ test {
 
 jacocoTestReport {
     dependsOn test // tests are required to run before generating the report
+    reports {
+        xml.required = true
+        html.required = true
+        csv.required = false
+    }
 }
 
 sourceSets.main.java.srcDirs = ['src/main/java','src/main/']
