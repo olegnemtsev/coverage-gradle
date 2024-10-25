@@ -8,4 +8,9 @@ public class MyUnit {
     public void print(){
         System.out.println("onetwothree");
     }
+
+    public void newMethodWithNoTests(){
+        int c=5;
+        c++;
+    }
 }
