@@ -12,5 +12,9 @@ jobs:
           java-version: 17
       - name: Install dependencies, run tests, and collect coverage
         run: gradle build
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
+      - name: Build with Gradle Wrapper
+        run: ./gradlew build
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
