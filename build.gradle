@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'jacoco'
+    id "org.sonarqube" version "5.1.0.4882"
 }
 
 group 'org.example'
@@ -28,6 +29,14 @@ jacocoTestReport {
         xml.required = true
         html.required = true
         csv.required = false
+    }
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "olegnemtsev_coverage-gradle"
+        property "sonar.organization", "on"
+        property "sonar.host.url", "https://sonarcloud.io"
     }
 }
 
