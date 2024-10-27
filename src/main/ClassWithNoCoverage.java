@@ -23,7 +23,7 @@ public class ClassWithNoCoverage {
         switch (op) {
             // case to add two numbers
             case '+':
-                o = num1 + num2;
+                o = num1 - num2;
                 break;
 
             // case to subtract two numbers
